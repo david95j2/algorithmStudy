@@ -173,3 +173,35 @@
 ```
 
 ---
+## <문제 4> 문자의 재정렬
+
+- 알파벳 대문자와 숫자 (0~9)로만 구성된 문자열이 입력으로 주어진다.
+- 이때 모든 알파벳을 오름차순으로 정렬하여 이어서 출력한 뒤에, 그 뒤에 모든 숫자를 더한 값을 이어서 출력해라.
+
+  - 예를 들어, K1KA5CB7 이라는 값이 들어오면 ABCKK13을 출력해라
+  
+## 내 소스코드
+
+```java
+    private void seventhTest(String txt) {
+        ArrayList<Character> result = new ArrayList<Character>();
+        int num = 0;
+        String val = "";
+
+        for (int i = 0; i<txt.length(); i++) {
+            if (Character.isLetter(txt.charAt(i))) {
+                result.add(txt.charAt(i));
+            } else {
+                num += txt.charAt(i) - '0';
+            }
+        }
+        Collections.sort(result);
+
+        for (int i =0; i<result.size(); i++) {
+            val += result.get(i);
+        }
+        val += String.valueOf(num);
+
+        System.out.println(val);
+    }
+```
