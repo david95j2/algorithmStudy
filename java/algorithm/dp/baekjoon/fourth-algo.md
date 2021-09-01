@@ -62,3 +62,23 @@
 > >   - 따라서 메모이제이션은 다이나믹 프로그래밍의 국한된 개념은 아니다.
 > >
 > >   - 한 번 계산된 결과를 담아 놓기만 하고 다이나믹 프로그래밍을 위해 활요하지 않을 수도 있다.
+
+
+```java
+    public static long[] d;
+    public static int[] h;
+
+    public static void test() {
+        String txt= "4 3 9 8 2 8";
+
+        int[] txts = Stream.of(txt.split(" ")).mapToInt(Integer::parseInt).toArray();
+        d[0] = txts[0];
+        d[1] = Math.max(txts[0],txts[1]);
+
+        for (int i =2 ; i<txts.length; i++ ) {
+            d[i] = Math.max(d[i-1],d[i-2]+txts[i]);
+            System.out.println(d[i]);
+        }
+        System.out.println(d[txts.length-1]);
+    }
+``` 
