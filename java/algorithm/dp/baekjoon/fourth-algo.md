@@ -63,7 +63,6 @@
 > >
 > >   - 한 번 계산된 결과를 담아 놓기만 하고 다이나믹 프로그래밍을 위해 활요하지 않을 수도 있다.
 
-
 ```java
     public static long[] d;
     public static int[] h;
@@ -82,3 +81,4 @@
         System.out.println(d[txts.length-1]);
     }
 ``` 
+

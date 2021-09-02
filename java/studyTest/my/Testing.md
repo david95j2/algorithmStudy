@@ -39,10 +39,8 @@
 ---
 이 문제는 배낭 문제(knapsack)로 매우 유명한 문제다. 문제 설명처럼 배낭에 넣을 수 있는 최댓값이 정해지고 해당 한도 물건을 넣어 가치의 합이 최대가 되도록 고르는 방법을 찾는 것이다. 즉, 조합 최적화 문제다.
 
-
-
 배낭문제, 일명 냅색 알고리즘은 크게 두 가지 문제로 분류 될 수 있는데, 짐을 쪼갤 수 있는 경우와 짐을 쪼갤 수 없는 경우로 나눌 수 있다. 짐을 쪼갤 수 있는 배낭문제를 Fraction Knapsack Problem 이라 하고, 짐을 쪼갤 수 없는 배낭문제를 0/1 Knapsack Problem 이라 한다. 알고리즘 또한 다르게 적용하는데, Fraction Knapsack Problem 의 경우 탐욕 알고리즘(Greedy)을 쓰며, 0/1 Knapsack Problem의 경우 DP 법을 쓴다. (물론 FPTAS(Fully polynomial time approximation scheme) 으로 스케일링을 통한 방법도 있지만 근사치를 얻는 방법인지라 자칫 틀릴 수도 있다.)
 
-
-
 이번 문제는 짐을 쪼갤 수 없기 때문에 다이나믹 프로그래밍(DP)로 해결해야한다.
+
+- dp(i, k) = f(i-1, k), max(f(i-1, k-w)+v, f(i-1,k))로 판별식 세우기
