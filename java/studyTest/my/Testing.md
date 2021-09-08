@@ -194,4 +194,46 @@ XXXXXXX...XXXX... <br>
 
 첫째 줄에 문제에서 주어진 걸리는 날을 출력한다.
 
+## 예제 입력 1
 
+> 10 2 <br>
+.L <br>
+.. <br>
+XX <br>
+XX <br>
+XX <br>
+XX <br>
+XX <br>
+XX <br>
+.. <br>
+.L <br>
+
+
+## 예제 출력 1
+> 3
+
+
+## 예제 입력 2
+> 4 11 <br>
+..XXX...X.. <br>
+.X.XXX...L. <br>
+....XXX..X. <br>
+X.L..XXX... <br>
+
+
+## 예제 출력 2
+> 2
+
+## 예제 입력 3
+> 8 17 <br>
+...XXXXXX..XX.XXX <br>
+....XXXXXXXXX.XXX <br>
+...XXXXXXXXXXXX.. <br>
+..XXXXX.LXXXXXX.. <br>
+.XXXXXX..XXXXXX.. <br>
+XXXXXXX...XXXX... <br>
+..XXXXX...XXX.... <br>
+....XXXXX.XXXL... <br>
+
+## 예제 출력 3
+> 2
