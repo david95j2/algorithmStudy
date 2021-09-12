@@ -246,3 +246,75 @@ XXXXXXX...XXXX... <br>
 백조끼리 서로 만나는지 확인하기 위해서는 bfs를 이용하면 되지만 한쪽 백조에서 출발하게 되면 탐색했던 범위를 반복해서 탐색하기 때문에 비효율적이다. 그렇기 때문에 다른쪽 백조를 찾기위해서 bfs탐색 도중 만나게 되는 얼음들을 저장해두었다가 다음 탐색에 사용한다.
 
 다음 단계는 물과 인접해 있는 얼음들을 녹이는 과정인데 여기서도 모든 물의 좌표를 저장해두면 순회하는데 시간이 많이 걸리기 때문에 물과 인접해 있는 얼음(이번에 녹을 얼음)좌표를 저장해두었다가 사용하면 효율적으로 풀이할 수 있다.
+
+
+
+
+## 카카오
+
+```java
+static String[] id_list = new String[]{
+            "muzi", "frodo", "apeach", "neo"
+    };
+
+    public static void main(String[] args) throws IOException {
+        String test = "...!@BaT#*..y.abcdefghijklm";
+        String[] id_list = new String[]{
+                "muzi", "frodo", "apeach", "neo"
+        };
+        String[] report = new String[]{
+                "muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"
+        };
+        int k = 2;
+
+        solution(id_list, report, k);
+    }
+
+    public static int[] findId(String me, String you) {
+        int[] tmp = new int[2];
+
+        for (int i = 0; i < id_list.length; i++) {
+            if (id_list[i].equals(me)) {
+                tmp[0] += i;
+            } else if (id_list[i].equals(you)) {
+                tmp[1] += i;
+            }
+        }
+        return tmp;
+    }
+
+    public static int[] solution(String[] id_list, String[] report, int k) {
+        int[] answer = new int[id_list.length];
+        String[][] reportNum = new String[id_list.length][2];
+
+        for (int i = 0; i < id_list.length; i++) {
+            for (int j = 0; j < 2; j++) {
+                reportNum[i][j] = "";
+            }
+        }
+
+
+        for (int i = 0; i < report.length; i++) {
+            String[] arr = report[i].split(" ");
+            int[] tmp = findId(arr[0], arr[1]);
+            if (reportNum[tmp[0]][1].contains(String.valueOf(tmp[1]))) {
+                continue;
+            }
+            reportNum[tmp[0]][1] += tmp[1];
+            reportNum[tmp[1]][0] += 1;
+        }
+
+        for (int i = 0; i < id_list.length; i++) {
+            if (reportNum[i][0].length() >= k) {
+                for (int j=0; j<id_list.length; j++) {
+                    if (reportNum[j][1].contains(String.valueOf(i))) {
+                        answer[j]++;
+                    }
+                }
+            }
+        }
+
+
+        return answer;
+    }
+```
