@@ -141,3 +141,25 @@ n개의 원소를 가진 리스트에서 단순 탐색을 사용하면 최대 n�
 
 반드시 데이터가 정렬되어있어야만 한다.
 
+
+```javascript
+
+function binarySearch (target, dataArray) {
+let low = 0;
+let high = dataArray.length - 1;
+let mid = Math.floor((high + low) / 2);
+while (target !== dataArray[mid]) {
+if (target < dataArray[mid]) {
+high = mid - 1;
+mid = Math.floor((high + low) / 2);
+} else {
+low = mid + 1;
+mid = Math.floor((high + low) / 2);
+}
+}
+return dataArray[mid];
+}
+
+
+출처: https://im-developer.tistory.com/126 [Code Playground]
+```
