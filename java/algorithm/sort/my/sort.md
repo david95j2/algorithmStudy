@@ -74,4 +74,28 @@ n-1번째까지 한바퀴를 돌게 되면 최대값은 배열의 맨 마지막�
   - 타겟이 되는 숫자가 이전 위치에 있던 원소보다 작다면 위치를 서로 교환한다.
   - 그 다음 타겟으 찾아 위와 같은 방법으로 반복한다.
 
+```java
+  public class Insertion_Sort {
+    public static void insertion_sort(int[] a){
+        insertion_sort(a, a.length);
+    }
+    
+    private static void insertion_sort(int[] a, int size) {
+        for (int i =1; i<size; i++) {
+            int target = a[i];
+            
+            int j = j -1;
+            
+            while (j >= 0 && target < a[j]) {
+                a[j+1] = a[j];
+                j--;
+            }
+            
+            a[j+1] = target;
+        }
+    }
+}
+
+```
+
 ## 셸정렬
