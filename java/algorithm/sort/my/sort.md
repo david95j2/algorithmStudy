@@ -29,6 +29,37 @@ n-1번째까지 한바퀴를 돌게 되면 최대값은 배열의 맨 마지막�
 정확히는 데이터를 서로 교환하는 과정(swap)에서 임시 변수를 필요로 하나, 이는 충분히 무시할 만큼 적은 양이기 때문에 제자리 정렬로 보는 것이다. 이는 선택정렬과도 같은 부분이다.
 그리고 이전에 다뤘던 선택 정렬과는 달리 거품 정렬은 앞에서부터 차례대로 비교하기 때문에 '안정 정렬'이기도 한다.
 
+1. 앞에서부터 현재 원소와 바로 다음의 원소를 비교한다.
+2. 현재 원소가 다음 원소보다 크면 원소를 교환한다.
+3. 다음 원소로 이동하여 해당 원소와 그 다음원소를 비교한다.
+
+
+```java
+
+public class Bubble_sort {
+    public static void bubble_sort(int[] a) {
+        bubble_sort(a, a.length);
+    }
+    
+    public static void bubble_sort(int[] a,int size) {
+        for (int i=1; i<size; i++) {
+            for (int j=0; j<size - i; j++) {
+                if (a[j] > a[j+1]) {
+                    swap(a, j, j+1);
+                }
+            }
+        }
+    }
+    
+    private static void swap(int[] a, int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+}
+
+```
+
 ## 삽입정렬
 
 배열이 어느정도 정렬된 상태에서 사용한다.
