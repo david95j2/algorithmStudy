@@ -71,6 +71,34 @@ public class Bubble_sort {
 정확히는 데이터를 서로 교환하는 과정에서 임시 변수를 필요로 하나, 이는 충분히 무시할 만큼 적은 양이기 떄문에 제자리 정렬로 본다.
 삽입 정렬은 '안정 정렬'이다.
 
+1. 현재 타겟이 되는 숫자와 이전 위치에 있는 원소들들 비교한다.(첫 번째 타켓은 두 번째 원소부터 시작하낟.)
+2. 타겟이 되는 숫자가 이전 위치에 있던 원소보다 작다면 위치를 서로 교환한다.
+3. 그 다음 타겟을 찾아 위와 같은 방법으로 반복한다.
+
+```java
+
+  public class Insertion_sort {
+    public static void insertion_sort(int[] a) {
+        insertion_sort(a, a.length);
+    }
+    
+    private static void insertion_sort(int[] a, int size) {
+        for (int i =1; i<size; i++) {
+            int target = a[i];
+            
+            int j = i -1;
+            
+            while (j >= 0 && target < a[j]) {
+                a[j+1] = a[j];
+                j--;
+            }
+            
+            a[j+1] = target;
+        }
+    }
+  }
+```
+
 ## 합병(병합)정렬
 
 분할정복(Divide and Conquer) 알고리즘의 일종
