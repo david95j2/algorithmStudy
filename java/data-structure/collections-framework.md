@@ -64,4 +64,13 @@ Deque는 Double ended Queue라는 의미로 양쪽에서 삽입삭제가 가능�
 쉽게 예로 들 수 있는 것은 카드 덱(deck)을 생각하면 된다. 카드를 중간에서 뺄 수는 없고, 맨 위에 놓거나, 맨 아래에 놓거나, 맨 위에 것을 빼거나,
 맨 아래 것을 뺄 수 있는 것이라 생각하면 된다. (마침 발음도 같아 기억하기 쉬울 것이다.) 
 
- 
+<Queue/Deque Interface를 구현하는 클래스>
+
+1. LinkedList
+2. ArrayDeque
+3. PriorityQueue
+
+
+<Queue/Deque Interface에 선언된 대표적인 메소드>
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcfpfoQ%2FbtqI66JL8WF%2FYgwfZ2O1HRhm67NK3CovEk%2Fimg.png)
