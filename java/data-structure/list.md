@@ -154,3 +154,5 @@ int[] 나, double[] 같은 배열을 말하는 것이다. 다만, 자바 컬렉�
 
 
 그럼 이제 List 인터페이스에 구현된 메소드들을 살펴보아야 겠다. 여기서 모든 메소드들을 살펴볼 수는 없고, 몇가지 자주 사용하는 메소드들이 있다.
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbD25oy%2FbtqKjcJw8ME%2FMhhaKCzEFHOQR3wqXruzYK%2Fimg.png)
