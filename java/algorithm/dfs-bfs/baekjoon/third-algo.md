@@ -93,3 +93,6 @@ public static void main(String[] args) {
     - BFS는 방문한 노드들을 차례로 저장한 후 꺼낼 수 있는 자료 구조인 큐(Queue)를 사용한다.
     - 즉, 선입선출(FIFO) 원칙으로 탐색
     - 일반적으로 큐를 이용해서 반복적 형태로 구현하는 것이 가장 잘 동작한다.
+
+구현해보도록 하자
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQ02IX%2FbtqNJv5vkjp%2FgXc4bR2U9NmKpFE6ckIjDK%2Fimg.png)
