@@ -96,3 +96,20 @@ public static void main(String[] args) {
 
 구현해보도록 하자
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQ02IX%2FbtqNJv5vkjp%2FgXc4bR2U9NmKpFE6ckIjDK%2Fimg.png)
+
+1. a 노드(시작 노드)를 방문한다. (방문한 노드 체크) 
+
+- 큐에 방문된 노드를 삽입(enqueue)한다.
+  
+- 초기 상태의 큐에는 시작 노드만이 저장
+
+2. 큐에서 꺼낸 노드과 인접한 노드들을 큐에 추가한다. (모두 차례로 방문)
+큐에서 꺼낸 노드를 방문한다.
+
+- 큐에서 꺼낸 노드과 인접한 노드들을 모두 방문한다.
+
+- 인접한 노드가 없다면 큐의 앞에서 노드를 꺼낸다(dequeue).
+
+- 큐에 방문된 노드를 삽입(enqueue)한다.
+
+3. 큐가 공백 상태가 될 때까지 계속한다.
