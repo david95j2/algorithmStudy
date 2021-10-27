@@ -113,3 +113,29 @@ public static void main(String[] args) {
 - 큐에 방문된 노드를 삽입(enqueue)한다.
 
 3. 큐가 공백 상태가 될 때까지 계속한다.
+
+
+```java
+LinkedList<Integer>[] adjList = new LinkedList[n + 1];
+
+for (int i = 0; i <= n; i++) {
+	adjList[i] = new LinkedList<Integer>();
+}
+
+// 두 정점 사이에 여러 개의 간선이 있을 수 있다.
+// 입력으로 주어지는 간선은 양방향이다.
+for (int i = 0; i < m; i++) {
+	int v1 = sc.nextInt();
+	int v2 = sc.nextInt();
+	adjList[v1].add(v2);
+	adjList[v2].add(v1);
+}
+
+for (int i = 1; i <= n; i++) { 
+	Collections.sort(adjList[i]); // 방문 순서를 위해 오름차순 정렬 
+}
+
+System.out.println("BFS - 인접리스트");
+bfs_list(v, adjList, visited);
+
+```
