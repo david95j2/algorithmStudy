@@ -1,9 +1,12 @@
-# AlgorithmStudy
+# AlgorithmStudy with Clean Code
 
 ---
 ## 자료 구조(Data Structure) 부터 알고리즘 정복!!
 
-죽은 Readme 파일이 아닌 살아있는 Readme 파일을 만들자.
+1. 죽은 Readme 파일이 아닌 살아있는 Readme 파일을 만들자.
+2. 클린코드에 대해서 같이 일하기 좋은 코드란 무엇일까?
+    
+    2-1. 클린코드 애자일 소프트웨어 장인 정신 다 읽기 프로젝트
 
 ---
 백준 / 프로그래머스를 통한 문제풀이 프로젝트 🛴
