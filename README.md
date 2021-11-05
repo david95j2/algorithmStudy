@@ -51,3 +51,59 @@
 - [ ] Hash Set
 - [ ] Linked Hash Set
 ---
+
+
+---
+## 알고리즘 Tip
+
+```java
+    public void 자리수다더하기() {
+        int num = 12345;
+
+        // 결과 저장
+        int sum = 0;
+
+        while (num != 0) {
+            sum += num%10;
+            num /= 10;
+        }
+    }
+
+    public void 자리수다곱하기() {
+        int num = 12345;
+
+        // 결과 저장
+        int sum = 0;
+
+        while (num != 0) {
+            sum *= num%10;
+            num /= 10;
+        }
+    }
+
+    public void 일부터N까지더하기() {
+        int num = 50;
+
+        int val = (num*(num+1))/2;
+    }
+
+    public void 소수의갯수구하기(int end) {
+        int count = 0;
+
+        // 해당 위치의 index가 true면 소수가 아니라는 의미로 사용
+        boolean check[] = new boolean[end+1];
+
+        for(int i=2; i <= end; i++){
+            // check[i]가 true면 소수임
+            if(check[i] == false){
+                count++;
+                // i*i부터 시작해 i를 더해가며 아닌 것들을 모두 제외시킴
+                // 숫자가 커서 overflow가 날 수 있어 1보다 크다는 조건 추가
+                for(int j= i*i; j > 1 && j <= end; j+=i){
+                    check[j] = true;
+                }
+            }
+        }
+        System.out.println("소수의 개수 : " + count);
+    }
+```
