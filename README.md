@@ -34,8 +34,8 @@
 ## 자료구조도 하나씩!!
 
 - [ ] Java Collections Framework
-- [ ] List Interface
-- [ ] ArrayList
+- [x] List Interface
+- [x] ArrayList
 - [ ] Singly LinkedList
 - [ ] Doubly LinkedList
 - [ ] Stact Interface
@@ -56,6 +56,21 @@
 ---
 ## 알고리즘 Tip
 
+```java
+        //1번
+        System.out.printf("%d %d\n",val++,val);
+        
+        //2번
+        System.out.printf("%d %d\n",++val,val);
+```
+> 1번은 val을 출력하고 +1 진행 / 2번은 +1을 하고 출력
+---
+```java
+char ch = (char)(Math.random() * (end-start+1) + start);
+```
+
+> start 부터 end 까지의 랜덤 난수 생성;
+---
 ```java
     public void 자리수다더하기() {
         int num = 12345;
