@@ -6,3 +6,17 @@
 ---
 - 같은 구조와 크기의 자료를 정해진 방향으로만 쌓을 수 있다.
 - top으로 정한 곳을 통해서만 접근 가능이다.
+
+```java
+public static void main(String[] args) {
+    Stack<String> stack = new Stack<>();
+    
+    stack.push("testData");
+    
+    System.out.println(stack.peek());
+
+    System.out.println(stack.pop());
+    
+    System.out.println(stack.pop());
+        }
+```
