@@ -20,3 +20,6 @@ public static void main(String[] args) {
     System.out.println(stack.pop());
         }
 ```
+
+![image](https://blog.kakaocdn.net/dn/Yz5uV/btqELyK5mOY/xfQD0KlF9DHwBDK2QkhePK/img.png)
+
