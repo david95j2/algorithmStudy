@@ -23,3 +23,16 @@ public static void main(String[] args) {
 
 ![image](https://blog.kakaocdn.net/dn/Yz5uV/btqELyK5mOY/xfQD0KlF9DHwBDK2QkhePK/img.png)
 
+
+() 붙어 있으면 레이져,
+(...)  막대, 레이져가 막대를 자르는데 잘린 막대의 수
+
+3가지
+<br>
+( 만난 경우
+<br>
+) 만난 경우
+<br>
+레이져를 만난 경우
+<br>
+
