@@ -36,3 +36,29 @@ public static void main(String[] args) {
 레이져를 만난 경우
 <br>
 
+```java
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        String ironStick = br.readLine();
+        Stack<Character> stack = new Stack<>();
+        int part = 0;
+        
+        for (int i = 0; i < ironStick.length(); i++) {
+            if(ironStick.charAt(i)=='('){
+                stack.push('(');
+            }else {
+                if(ironStick.charAt(i-1)=='(') { // 레이져인 경우
+                    stack.pop();
+                    part+=stack.size();
+                }else {
+                    ++part;
+                    stack.pop();
+                }
+            }
+        }
+        System.out.println(part);
+    }
+}
+```
