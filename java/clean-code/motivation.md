@@ -22,4 +22,10 @@ Character character = new Character("JOHN","35");
 
 // 이름을 부여하여 두 번째 값을 파악
 Character character = character.withAge("JOHN","35");
+
+int a; //경과 시간(단위 : 날짜)
+
+//의도가 드러난 이름
+int elapsedTimeIndays;
+int daysSinceCreation;
 ```
