@@ -64,3 +64,7 @@ public class Main {
 ```
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc2SyeX%2FbtrkJnvWcpx%2FlzDiueCnEMJRFNbHgqrlDk%2Fimg.png)
+
+> N개의 줄에 두 정수가 주어질 때, 첫번째는 줄 / 두번째는 프렛번호
+> for문으로 각 줄을 돌릴 때, 최근 줄위치와 프렛위치를 기억하여
+> 같은 줄에서 프렛 높낮이 파악 후 횟수 count 증가하기로 접근하겠다.
