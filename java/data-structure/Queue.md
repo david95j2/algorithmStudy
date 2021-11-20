@@ -10,3 +10,9 @@
    - Max Heap은 부모가 자식보다 크거나 같은 값을 갖는다.
 
  - push가 되면 가장 끝 노드에 추가가 되고 조건을 만족하도록 정렬이 이루어진다. 새로운 노드를 부모 노드와 비교하면서 부모 노드보다 값이 크면 swap해서 올라간다. 트리 구조이기 때문에 시간 복잡도는 O(logN)이다.
+
+2. priority queue
+- priority_queue<type, Container Type, Compare> 로 정의
+- 기본적으로 Min Heap이며 Max Heap은 Compare 함수에 greater<Type>을 사용하면 된다.
+- Type이 pair인 경우 첫번째 값을 비교해 정렬한다.
+- 관련함수는 queue와 유사하다.
