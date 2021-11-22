@@ -1,5 +1,10 @@
 ## Queue
 
+#### 예를 들어
+1. 티켓부스에서 줄을 서서 기다리는 사람들
+2. 일방통행 도로를 지나는 차량들
+3. 컴퓨터 운영체제의 테스크 스케줄링
+
 ## Prioirty Queue
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJU1JT%2FbtrlpLQqSHZ%2FotTGNyfzMyqzkQqJZny940%2Fimg.png)
@@ -81,3 +86,4 @@ public class Main {
 
 }
 ```
+
