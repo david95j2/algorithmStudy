@@ -121,3 +121,10 @@
         return Integer.parseInt(s);
     }
 ```
+
+
+## kakao internship_2
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbLHb63%2Fbtrl0a3wc6n%2FUnByz6K0c5pEZkeUpUKwDk%2Fimg.png)
+
+> 노드를 사용하나..?
