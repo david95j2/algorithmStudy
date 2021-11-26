@@ -122,3 +122,50 @@ char ch = (char)(Math.random() * (end-start+1) + start);
         System.out.println("소수의 개수 : " + count);
     }
 ```
+
+
+## 오류일기
+
+---
+
+- intellij 가 실행속도가 느린 것 같아서 vm option을 변경하여서 에러가 발생
+
+> -server
+>
+> -Xms2g
+>
+> -Xmx2g
+>
+> -XX: NewRatio=3
+>
+> -Xss16m
+>
+> -XX: +UseConcMarkSweepGC
+>
+> -XX: +CMSParallelRemarkEnabled
+>
+> -XX: ConcGCThreads=4
+>
+> -XX: ReservedCodeCacheSize=240m
+>
+> -XX: +AlwaysPreTouch
+>
+> -XX: +TieredCompilation
+>
+> -XX: +UseCompressed0ops
+>
+> -XX: SoftRefLRUPolicyMSPerMB=50
+>
+> -Dsun.io.useCanonCaches=false
+>
+> -Djava.net.preferIPv4Stack=true
+>
+> -Djsse.enableSNIExtension=false
+>
+> -ea
+
+
+- 으로 변경하였는데, jvm 이 맞지 않다고 하는 에러가 뜨면서 intellij 가 열리지 않았음.
+- 이후 bin 파일을 들어가 idea64.exe.vmoptions 을 기존대로 수정하였지만
+- 계속 반영되지 않았음.
+- 결국 새로 깔았다...
