@@ -169,3 +169,4 @@ char ch = (char)(Math.random() * (end-start+1) + start);
 - 이후 bin 파일을 들어가 idea64.exe.vmoptions 을 기존대로 수정하였지만
 - 계속 반영되지 않았음.
 - 결국 새로 깔았다...
++ 찾아보니.. 사람들도 vmoptions 파일을 수정했지만 여전히 계속되는 error를 겪고있었고, 파일을 삭제하니 해결됬다고 한다..
